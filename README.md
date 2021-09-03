@@ -1,13 +1,13 @@
 # Face-Mask-detection
 ## Overview:
 
-Covid-19 has spread too fast too much hindering our lives. Wearing a mask is a basic, precautionary measure to prevent the pandemic. This project aims to perform real time face mask detection using CNN and haarClassifier
+Covid-19 has spread too fast too much hindering our lives. Wearing a mask is a basic, precautionary measure to prevent the pandemic. This project aims to perform real time face mask detection using DNN face detector and MobileNetV2.
 
 ## PART-1
 
 #### Face detection:
 ##### 1. Using DNN Face detector:
-It is a Caffee model based on SSD (Single sot Multibox Detector) and ResNet-10 architecture. It is available in OpenCV.
+It is a Caffee model based on SSD (Single shot Multibox Detector) and ResNet-10 architecture. It is available in OpenCV.
 
 1. Load network using **cv2.dnn.readNetFromCaffe** passing the weights and layers as arguments. The files for weights and layers are added in the repository (protxt and weights)
 Caffe stores and communicates data using blobs.
@@ -23,7 +23,7 @@ This is passed to the network and faces are detected.
 Training the model:
 
 #### Dataset:
-It has 800 images, 400 labelled as wit mask and 400 labelled as without mask.
+It has 800 images, 400 labelled as wit mask and 400 labelled as without mask. The dataset can be downloaded from repository (Validation.rar)
 **Sample imagesfrom dataset**
 ![wm](https://user-images.githubusercontent.com/89915293/131957272-16c53ae8-9fcc-4931-9908-0eae27c67a0a.PNG)
 ![wom](https://user-images.githubusercontent.com/89915293/131957443-776ad519-c221-4287-b218-bb38e60c449e.PNG)
@@ -35,7 +35,7 @@ We are loading the MobileNetV2 model from keras and usingits pretrained weights 
 
 **Results:**![plot_trainvsacc](https://user-images.githubusercontent.com/89915293/131956857-3dbdccfa-f81e-4df0-9634-03ee5cf5846b.PNG)
 
-97.03% accuracy was achieved on training data. This can augmented with our face detection model in order to get the Face Mask Detection.
+97.03% accuracy was achieved on training data. This can be augmented with our face detection model in order to get the Face Mask Detection.
 
 Output on test video from youtube:
 
@@ -43,7 +43,18 @@ Output on test video from youtube:
 ![output](https://user-images.githubusercontent.com/89915293/131958235-e1359294-a455-42bf-a9eb-fca2e12829e3.PNG)
 ![output2](https://user-images.githubusercontent.com/89915293/131958248-5b838af0-15ba-4d1e-8834-f57bf8907e3e.PNG)
 
+Limitations:
+
 Due to occlusion in some cases, our face detector isnt able to detect faces.
+
+
+
+
+
+
+
+
+
 
 
 
