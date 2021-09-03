@@ -23,8 +23,13 @@ This is passed to the network and faces are detected.
 Training the model:
 
 #### Dataset:
-It has 800 images, 400 labelled as wit mask and 400 labelled as without mask. The dataset can be downloaded from repository (Validation.rar)
+It has 800 images, 400 labelled as with mask and 400 labelled as without mask. The dataset can be downloaded from repository 
+(Validation.rar)
+
+
 **Sample imagesfrom dataset**
+
+
 ![wm](https://user-images.githubusercontent.com/89915293/131957272-16c53ae8-9fcc-4931-9908-0eae27c67a0a.PNG)
 ![wom](https://user-images.githubusercontent.com/89915293/131957443-776ad519-c221-4287-b218-bb38e60c449e.PNG)
 
